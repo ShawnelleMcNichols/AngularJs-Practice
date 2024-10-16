@@ -1,0 +1,90 @@
+[
+    {
+        "id": "1",
+        "releaseName": "",
+        "releaseDate": "2021-09-01",
+        "apps": [
+            {
+                "appName": "HealthScan",
+                "version": "0.1.0",
+                "changes": [
+                    {
+                        "type": "feature",
+                        "descriptionEN": "New section added that display duplicated fields on forms.",
+                        "descriptionFR": "Nouvelle section ajoutée qui affiche les champs dupliqués sur les formulaires."
+                    },
+                    {
+                        "type": "feature",
+                        "descriptionEN": "New section added that display long running reports.",
+                        "descriptionFR": "Nouvelle section ajoutée qui affiche les rapports en cours d'exécution."
+                    },
+                    {
+                        "type": "feature",
+                        "descriptionEN": "New section added that display Client-Callable Script Includes whithout ACLs.",
+                        "descriptionFR": "Nouvelle section ajoutée qui affiche les scripts includes appelables par le client sans ACL."
+                    }
+                ]
+            },
+            {
+                "appName": "SDS Generator",
+                "version": "1.1.1",
+                "changes": [
+                    {
+                        "type": "feature",
+                        "descriptionEN": "New section added that display all catalog items.",
+                        "descriptionFR": "Nouvelle section ajoutée qui affiche tous les éléments de catalogue."
+                    },
+                    {
+                        "type": "fix",
+                        "descriptionEN": "Optimization of the update sets parent-child relationship fetch process.",
+                        "descriptionFR": "Optimisation du processus de récupération de la relation parent-enfant des mises à jour."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "releaseName": "",
+        "releaseDate": "2022-09-01",
+        "apps": [
+            {
+                "appName": "HealthScan",
+                "version": "0.1.0",
+                "changes": [
+                    {
+                        "type": "feature",
+                        "descriptionEN": "New section added that display duplicated fields on forms.",
+                        "descriptionFR": "Nouvelle section ajoutée qui affiche les champs dupliqués sur les formulaires."
+                    },
+                    {
+                        "type": "feature",
+                        "descriptionEN": "New section added that display long running reports.",
+                        "descriptionFR": "Nouvelle section ajoutée qui affiche les rapports en cours d'exécution."
+                    },
+                    {
+                        "type": "feature",
+                        "descriptionEN": "New section added that display Client-Callable Script Includes whithout ACLs.",
+                        "descriptionFR": "Nouvelle section ajoutée qui affiche les scripts includes appelables par le client sans ACL."
+                    }
+                ]
+            },
+            {
+                "appName": "SDS Generator",
+                "version": "1.1.1",
+                "changes": [
+                    {
+                        "type": "feature",
+                        "descriptionEN": "New section added that display all catalog items.",
+                        "descriptionFR": "Nouvelle section ajoutée qui affiche tous les éléments de catalogue."
+                    },
+                    {
+                        "type": "fix",
+                        "descriptionEN": "Optimization of the update sets parent-child relationship fetch process.",
+                        "descriptionFR": "Optimisation du processus de récupération de la relation parent-enfant des mises à jour."
+                    }
+                ]
+            }
+        ]
+    }
+]

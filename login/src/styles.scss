@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom global styles
+body {
+    @apply font-primary bg-hgc-black text-hgc-white font-secondary;
+  }
+  
+  div {
+    @apply font-primary 
+  }
+
+  h1, h2, h3, h4, h5, h6, a {
+    @apply font-primary text-hgc-gold;
+  }
+  
+  .btn {
+    @apply bg-hgc-gold text-hgc-black border border-hgc-gold;
+  }
+  
+  .btn:hover {
+    @apply bg-opacity-90 border-opacity-90;
+  }
+  
+  table, th, td {
+    border-color: transparent;
+   
+    &.border, &:has(th.border), &:has(td.border) {
+      border-color: border-hgc-gold;
+    }
+  }
+ 
+  
+  th {
+    @apply bg-hgc-black;
+  }
+  
+  .sidebar {
+    border-right: 1px solid darken(#D6B66D, 25%);
+ 
+  }
+  
+
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #0E0E0E; /* HGC Black */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #424242; /* HGC Gold */
+    border-radius: 2em;
+     
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: lighten(#424242, 10%);
+  }
+  
+ 
+

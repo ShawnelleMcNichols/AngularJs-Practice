@@ -1,0 +1,88 @@
+{
+    "HEADER": {
+        "SEARCH": {
+            "TEXT": "Rechercher.."
+        }
+    },
+    "MENUITEMS": {
+        "USER": {
+            "POST": "Gestionnaire"
+        },
+        "MAIN": {
+            "TEXT": "-- Principal"
+        },
+        "HOME": {
+            "TEXT": "Outils",
+            "LIST": {
+                "DASHBOARD1": "Scanner d'instance",
+                "DASHBOARD2": "Procès-verbaux",
+                "DASHBOARD3": "MonPM",
+                "DASHBOARD4": "Revue de performance",
+                "DASHBOARD5": "Générateur de FDS",
+                "DASHBOARD6": "Outils de formation",
+                "DASHBOARD7": "HealthScan"
+            }
+        },
+        "ADVANCE-TABLE": {
+            "TEXT": "Tableau avancé"
+        },
+        "APPS": {
+            "TEXT": "-- Applications"
+        },
+        "CALENDAR": {
+            "TEXT": "Calendrier"
+        },
+        "TASK": {
+            "TEXT": "Tâche"
+        },
+        "CONTACTS": {
+            "TEXT": "Contacts"
+        },
+        "EMAIL": {
+            "TEXT": "Email",
+            "LIST": {
+                "INBOX": "Boîte de réception",
+                "COMPOSE": "Composer",
+                "READ": "Lire l'email"
+            }
+        },
+        "MORE-APPS": {
+            "TEXT": "Plus d'applications",
+            "LIST": {
+                "CHAT": "Chat",
+                "SUPPORT": "Support",
+                "DRAG-DROP": "Glisser & Déposer",
+                "CONTACT-GRID": "Grille de contacts"
+            }
+        },
+        "COMPONENTS": {
+            "TEXT": "-- Composants"
+        },
+        "WIDGETS": {
+            "TEXT": "Widgets",
+            "LIST": {
+                "CHART-WIDGET": "Widget de graphique",
+                "DATA-WIDGET": "Widget de données"
+            }
+        },
+        "FORMS": {
+            "TEXT": "Formulaires",
+            "LIST": {
+                "CONTROLS": "Contrôles de formulaire",
+                "ADVANCE": "Contrôle avancé",
+                "EXAMPLE": "Exemples de formulaires",
+                "VALIDATION": "Validation de formulaire",
+                "WIZARD": "Assistant",
+                "EDITORS": "Éditeurs"
+            }
+        },
+        "TABLES": {
+            "TEXT": "Tableaux",
+            "LIST": {
+                "BASIC": "Tableaux de base",
+                "MATERIAL": "Tableaux Material",
+                "NGX-DATATABLE": "NGX-Datatable"
+            }
+        }
+    }
+}

@@ -1,0 +1,162 @@
+@use '@angular/material' as mat;
+
+// Define your custom color palettes
+$gold-palette: (
+  50: #f9f6ec,
+  100: #f2ebd8,
+  200: #ebdebf,
+  300: #e3d0a5,
+  400: #dec690,
+  500: #d6b66d, // Main gold color
+  600: #cba457,
+  700: #b9913d,
+  800: #a57d22,
+  900: #8e6611,
+  A100: #ffeecd,
+  A200: #ffdc9a,
+  A400: #ffd066,
+  A700: #ffc133,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: rgba(0, 0, 0, 0.87),
+    600: rgba(255, 255, 255, 1),
+    700: rgba(255, 255, 255, 1),
+    800: rgba(255, 255, 255, 1),
+    900: rgba(255, 255, 255, 1),
+    A100: rgba(0, 0, 0, 0.87),
+    A200: rgba(0, 0, 0, 0.87),
+    A400: rgba(0, 0, 0, 0.87),
+    A700: rgba(0, 0, 0, 0.87),
+  )
+);
+
+$blue-palette: (
+  50: #e8eaf6,
+  100: #c5cae9,
+  200: #9fa8da,
+  300: #7986cb,
+  400: #5c6bc0,
+  500: #311b92, // Main blue color
+  600: #283593,
+  700: #1a237e,
+  800: #121c6b,
+  900: #0d1447,
+  A100: #8c9eff,
+  A200: #536dfe,
+  A400: #3d5afe,
+  A700: #304ffe,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: rgba(255, 255, 255, 1),
+    600: rgba(255, 255, 255, 1),
+    700: rgba(255, 255, 255, 1),
+    800: rgba(255, 255, 255, 1),
+    900: rgba(255, 255, 255, 1),
+    A100: rgba(0, 0, 0, 0.87),
+    A200: rgba(255, 255, 255, 1),
+    A400: rgba(255, 255, 255, 1),
+    A700: rgba(255, 255, 255, 1),
+  )
+);
+
+
+$black-palette: (
+  50: #ffffff,
+  100: #f2f2f2,
+  200: #d9d9d9,
+  300: #bfbfbf,
+  400: #a6a6a6,
+  500: #8c8c8c,
+  600: #737373,
+  700: #595959,
+  800: #404040,
+  900: #262626,
+  A100: #000000,
+  A200: #000000,
+  A400: #000000,
+  A700: #000000,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: rgba(0, 0, 0, 0.87),
+    600: rgba(255, 255, 255, 1),
+    700: rgba(255, 255, 255, 1),
+    800: rgba(255, 255, 255, 1),
+    900: rgba(255, 255, 255, 1),
+    A100: rgba(255, 255, 255, 1),
+    A200: rgba(255, 255, 255, 1),
+    A400: rgba(255, 255, 255, 1),
+    A700: rgba(255, 255, 255, 1),
+  )
+);
+
+// Define a white palette for use if needed
+$white-palette: (
+  50: #ffffff,
+  100: #ffffff,
+  200: #ffffff,
+  300: #ffffff,
+  400: #ffffff,
+  500: #ffffff,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: rgba(0, 0, 0, 0.87),
+    600: rgba(0, 0, 0, 0.87),
+    700: rgba(0, 0, 0, 0.87),
+    800: rgba(0, 0, 0, 0.87),
+    900: rgba(0, 0, 0, 0.87),
+    A100: rgba(0, 0, 0, 0.87),
+    A200: rgba(0, 0, 0, 0.87),
+    A400: rgba(0, 0, 0, 0.87),
+    A700: rgba(0, 0, 0, 0.87),
+  )
+);
+
+
+// Include the core styles. This should be included only once in your entire application.
+@include mat.core();
+
+$primary-palette: mat.define-palette($gold-palette, 500);
+$accent-palette: mat.define-palette($black-palette, 500);
+$warn-palette: mat.define-palette(mat.$red-palette);
+
+// Define your custom theme
+$custom-theme: mat.define-light-theme((
+  color: (
+    primary: $primary-palette,
+    secondary: $blue-palette,
+    accent: $accent-palette,
+    warn: $warn-palette,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0,
+));
+
+// Apply the theme to your application
+html {
+  @include mat.all-component-themes($custom-theme);
+}
+

@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    height:100vh;
+}
+.content {
+    padding:20px;
+}
+.form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.full-width {
+    margin: 0 20px 20px 0;
+    width: 100%;
+}
+.button{
+   text-align: center;
+}
+.login-btn{
+    width: 100%;
+}
+a {
+    color:#765a0b;
+}
+div{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
