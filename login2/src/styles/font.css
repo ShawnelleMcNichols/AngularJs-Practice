@@ -1,0 +1,12 @@
+@font-face{
+    font-family: 'Lufga';
+    src:url('../assets/fonts/Lufga-Black.otf') format('opentype');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face{
+font-family: 'Lufga';
+src:url('../assets/fonts/Lufga-Regular.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}

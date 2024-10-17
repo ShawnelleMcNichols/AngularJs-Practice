@@ -2,7 +2,7 @@
     <mat-card appearance="raised">
         <mat-card-content class="content">
             <h1>Login</h1>
-            <p>Don't already have an account? <a href="/register">Register</a></p>
+            
             <form class="form">
                 <mat-form-field class="full-width">
                     <mat-label>Email</mat-label>
@@ -16,19 +16,35 @@
                 </mat-form-field>
                 <mat-form-field class="full-width">
                     <mat-label>Password</mat-label>
-                    <input type="password" matInput [formControl]="passwordFormControl">
+                    <input [type]="hidePassword ? 'password' : 'text'" matInput [formControl]="passwordFormControl">
                     @if (passwordFormControl.hasError('minLength') && !passwordFormControl.hasError('required')) {
                     <mat-error>Password must be atleast 6 characters long</mat-error>
                     }
                     @if (emailFormControl.hasError('required')) {
                     <mat-error>Password is <strong>required</strong></mat-error>
                     }
+                    <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button"><mat-icon>{{
+                            hidePassword ? 'visibility' : 'visibility_off' }}</mat-icon></button>
                 </mat-form-field>
-                <a href="#">Forgot password?</a>
+                <section class="section">
+                    <mat-checkbox>Remember me</mat-checkbox>
+                    <a href="#">Forgot password?</a>
+                </section>
+
                 <div class="button">
-                    <button class="login-btn" mat-flat-button>Login</button>
+                    <button class="login-btn" mat-flat-button type="submit">Login</button>
+                </div>
+                <div class="button">
+                    <button class="google-btn" mat-button type="button">
+                        <div class="google-btn-content">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                alt="Google Logo" />
+                            <span>Login with Google</span>
+                        </div>
+                    </button>
                 </div>
             </form>
+            <p>Don't have an account? <a href="#">Register</a></p>
         </mat-card-content>
     </mat-card>
 </div>
