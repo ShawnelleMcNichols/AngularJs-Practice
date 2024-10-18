@@ -1,3 +1,4 @@
+
 .container {
     display: flex;
     justify-content: center;
@@ -5,15 +6,19 @@
     margin-top: auto;
     height: 100vh;
 }
-
 .content {
     padding: 50px;
-    margin: 30px;
+    margin: 10px;
 }
-
+@media (max-width: 600px) {
+    .content {
+        padding: 20px;
+        margin: 10px;
+    }
+}
 .form {
     min-width: 100px;
-    max-width: 350px;
+    max-width: 300px;
     width: 100%;
 }
 
@@ -34,6 +39,8 @@
     height: 40px;
     background-color: #FFFFFF;
     color: black;
+    border-radius: 20px;
+    box-shadow: none;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -64,9 +71,14 @@
     align-items: center;
     margin: 12px 0;
 }
+.logo{
+    width:40px;
+    height:auto;
+}
 
 a {
     color: #765a0b;
+    font-size: 14px;
 }
 
 div {
@@ -81,6 +93,7 @@ div {
 
 p {
     text-align: center;
+    font-size: 14px;
 }
 
 mat-label,
